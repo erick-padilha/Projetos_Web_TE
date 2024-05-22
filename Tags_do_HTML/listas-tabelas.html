@@ -1,0 +1,140 @@
+<!DOCTYPE HTML> <!-- Define o tipo de documento HTML -->
+<html lang="pt-BR"> <!-- Define a linguagem do documento -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a configuração de visualização em dispositivos móveis -->
+    <title>Listas e Tabelas</title> <!-- Define o título da página -->
+    <style>
+        /* Estilo interno */
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte do texto */
+            line-height: 1.6; /* Define a altura da linha */
+            margin: 0; /* Define a margem externa */
+            padding: 0; /* Define o preenchimento interno */
+            background-color: #f4f4f4; /* Define a cor de fundo */
+        }
+        header, footer {
+            background-color: #333; /* Define a cor de fundo do cabeçalho e rodapé */
+            color: #fff; /* Define a cor do texto */
+            padding: 1em 0; /* Define o preenchimento interno */
+            text-align: center; /* Alinha o texto ao centro */
+        }
+        nav ul {
+            list-style: none; /* Remove os estilos da lista */
+            padding: 0; /* Remove o preenchimento interno */
+        }
+        nav ul li {
+            display: inline; /* Define os itens da lista como elementos em linha */
+            margin-right: 10px; /* Define a margem à direita */
+        }
+        nav ul li a {
+            text-decoration: none; /* Remove a decoração do link */
+            color: #333; /* Define a cor do texto */
+            padding: 5px 10px; /* Define o preenchimento interno */
+            border: 1px solid #333; /* Define a borda */
+            border-radius: 5px; /* Define o raio da borda */
+        }
+        nav ul li a:hover {
+            background-color: #333; /* Define a cor de fundo ao passar o mouse */
+            color: #fff; /* Define a cor do texto ao passar o mouse */
+        }
+        main {
+            padding: 20px; /* Define o preenchimento interno */
+            max-width: 800px; /* Define a largura máxima */
+            margin: 0 auto; /* Centraliza horizontalmente */
+            background-color: #fff; /* Define a cor de fundo */
+        }
+        section {
+            margin-bottom: 20px; /* Define a margem inferior */
+        }
+        table {
+            width: 100%; /* Define a largura da tabela */
+            border-collapse: collapse; /* Combina as bordas da tabela */
+            margin-bottom: 20px; /* Define a margem inferior */
+        }
+        table, th, td {
+            border: 1px solid #ddd; /* Define a borda */
+        }
+        th, td {
+            padding: 10px; /* Define o preenchimento interno */
+            text-align: left; /* Alinha o texto à esquerda */
+        }
+        th {
+            background-color: #f4f4f4; /* Define a cor de fundo do cabeçalho */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Listas e Tabelas</h1> <!-- Define o cabeçalho principal -->
+        <nav>
+            <ul>
+                <!-- Lista de navegação -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="estrutura-basica.html">Estrutura Básica</a></li>
+                <li><a href="formularios-interatividade.html">Formulários</a></li>
+                <li><a href="conteudo-multimidia.html">Conteúdo Multimídia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!-- Seção principal -->
+            <h2>Listas e Tabelas</h2> <!-- Título da seção -->
+
+            <h3>Lista Ordenada</h3> <!-- Título da lista ordenada -->
+            <ol>
+                <!-- Lista ordenada -->
+                <li>Primeiro Item</li>
+                <li>Segundo Item</li>
+                <li>Terceiro Item</li>
+            </ol>
+
+            <h3>Lista Desordenada</h3> <!-- Título da lista desordenada -->
+            <ul>
+                <!-- Lista desordenada -->
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+            </ul>
+
+            <h3>Tabela de Dados</h3> <!-- Título da tabela -->
+            <table>
+                <!-- Tabela -->
+                <thead>
+                    <!-- Cabeçalho da tabela -->
+                    <tr>
+                        <!-- Linha do cabeçalho -->
+                        <th>Nome</th> <!-- Cabeçalho da primeira coluna -->
+                        <th>Idade</th> <!-- Cabeçalho da segunda coluna -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Corpo da tabela -->
+                    <tr>
+                        <!-- Linha da tabela -->
+                        <td>João</td> <!-- Dados da primeira coluna -->
+                        <td>30</td> <!-- Dados da segunda coluna -->
+                    </tr>
+                    <tr>
+                        <!-- Outra linha da tabela -->
+                        <td>Maria</td> <!-- Dados da primeira coluna -->
+                        <td>25</td> <!-- Dados da segunda coluna -->
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <!-- Rodapé da tabela -->
+                    <tr>
+                        <!-- Linha do rodapé -->
+                        <td colspan="2">Fim da Tabela</td> <!-- Colspan para mesclar células -->
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <!-- Rodapé da página -->
+        <p>&copy; 2024 Listas e Tabelas</p> <!-- Informação de copyright -->
+    </footer>
+</body>
+</html>

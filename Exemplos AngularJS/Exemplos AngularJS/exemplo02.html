@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" ng-app>
+	<head>
+		 <title>AngularJS - Framework front-end MVW - JS</title>
+		 <meta charset="UTF-8">
+		 <meta name="description" content="Aprendendo utilizar as diretivas AngularJS">
+		 <meta name="author" content="Aline Zenker">
+		 <link rel="stylesheet" href="css/bootstrap.min.css">
+		 <script src="js/angular.min.js"></script>
+	</head>
+	<body>
+	  <div class="container-fluid" style="width:50%">
+			<h1>Tela de Login</h1>
+			<form name="cadastro" method="post" action="#" class="form-inline">
+				<input type="email" name="txtemail" placeholder="Digite seu email" 
+				required class="form-control" ng-model="email" >
+				<input type="password" name="txtsenha" placeholder="Digite sua senha" 
+				required class="form-control" ng-model="password" >
+				<input type="submit" ng-disabled="!email || !password"
+				value="Logar" class="btn btn-primary">
+		</form>
+	  </div>
+	</body>
+</html>

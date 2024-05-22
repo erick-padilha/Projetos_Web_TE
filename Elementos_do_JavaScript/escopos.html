@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Escopos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="variaveis.html">Variáveis</a></li>
+                <li><a href="funcoes.html">Funções</a></li>
+                <!-- ... outros links -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Exemplos de Escopos</h2>
+        <p>Escopos determinam a visibilidade das variáveis e funções em diferentes partes do código.</p>
+        <pre>
+            <code>
+                // Escopo global
+                let global = "Estou no escopo global";
+
+                function meuEscopo() {
+                    // Escopo local
+                    let local = "Estou no escopo local";
+                    console.log(global); // Pode acessar variável global
+                    console.log(local);  // Pode acessar variável local
+                }
+
+                meuEscopo();
+                console.log(global); // Pode acessar variável global
+                // console.log(local); // Erro! Não pode acessar variável local fora da função
+            </code>
+        </pre>
+    </main>
+    <footer>
+        <p>&copy; 2024 JavaScript Elementos</p>
+    </footer>
+</body>
+
+</html>

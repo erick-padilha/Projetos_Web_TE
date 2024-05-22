@@ -1,0 +1,108 @@
+<!DOCTYPE HTML> <!-- Define o tipo de documento HTML5 -->
+<html lang="pt-BR"> <!-- Define o início do documento HTML e o idioma -->
+<head> <!-- Define informações sobre o documento -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define configurações de visualização -->
+    <title>Conteúdo Multimídia</title> <!-- Define o título da página -->
+    <style>
+        /* Estilo interno */
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte do texto */
+            line-height: 1.6; /* Define a altura da linha */
+            margin: 0; /* Remove margem externa */
+            padding: 0; /* Remove preenchimento externo */
+            background-color: #f4f4f4; /* Define a cor de fundo */
+        }
+        header, footer {
+            background-color: #333; /* Define a cor de fundo do cabeçalho e rodapé */
+            color: #fff; /* Define a cor do texto do cabeçalho e rodapé */
+            padding: 1em 0; /* Adiciona preenchimento ao cabeçalho e rodapé */
+            text-align: center; /* Alinha o texto ao centro no cabeçalho e rodapé */
+        }
+        nav ul {
+            list-style: none; /* Remove os marcadores de lista */
+            padding: 0; /* Remove o preenchimento interno da lista */
+        }
+        nav ul li {
+            display: inline; /* Exibe os itens da lista em linha */
+            margin-right: 10px; /* Adiciona margem à direita entre os itens da lista */
+        }
+        nav ul li a {
+            text-decoration: none; /* Remove a decoração de texto do link */
+            color: #333; /* Define a cor do texto do link */
+            padding: 5px 10px; /* Adiciona preenchimento ao redor do link */
+            border: 1px solid #333; /* Adiciona uma borda sólida ao redor do link */
+            border-radius: 5px; /* Adiciona borda arredondada ao link */
+        }
+        nav ul li a:hover {
+            background-color: #333; /* Define a cor de fundo ao passar o mouse sobre o link */
+            color: #fff; /* Define a cor do texto ao passar o mouse sobre o link */
+        }
+        main {
+            padding: 20px; /* Adiciona preenchimento interno ao conteúdo principal */
+            max-width: 800px; /* Define a largura máxima do conteúdo principal */
+            margin: 0 auto; /* Centraliza o conteúdo principal na página */
+            background-color: #fff; /* Define a cor de fundo do conteúdo principal */
+        }
+        section {
+            margin-bottom: 20px; /* Adiciona margem na parte inferior da seção */
+        }
+        figure {
+            margin: 0; /* Remove a margem */
+            padding: 0; /* Remove o preenchimento */
+        }
+        figcaption {
+            text-align: center; /* Alinha o texto ao centro */
+            font-style: italic; /* Define o estilo de fonte itálico */
+        }
+        audio, video {
+            width: 100%; /* Define a largura para preencher a largura disponível */
+            margin-bottom: 20px; /* Adiciona margem na parte inferior */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conteúdo Multimídia</h1> <!-- Define o cabeçalho da página -->
+        <nav> <!-- Define os links de navegação -->
+            <ul> <!-- Define uma lista desordenada -->
+                <li><a href="index.html">Home</a></li> <!-- Define um item de lista e um hyperlink -->
+                <li><a href="estrutura-basica.html">Estrutura Básica</a></li>
+                <li><a href="formularios-interatividade.html">Formulários</a></li>
+                <li><a href="listas-tabelas.html">Listas e Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- Define o conteúdo principal -->
+        <section> <!-- Define uma seção -->
+            <h2>Exemplos de Multimídia</h2> <!-- Define o cabeçalho de nível 2 -->
+
+            <h3>Imagem com Legenda</h3> <!-- Define o cabeçalho de nível 3 -->
+            <figure> <!-- Define uma figura -->
+                <img src="imagem.jpg" alt="Descrição da imagem"> <!-- Define uma imagem com uma descrição -->
+                <figcaption>Esta é uma legenda da imagem.</figcaption> <!-- Define uma legenda para a imagem -->
+            </figure>
+
+            <h3>Vídeo</h3> <!-- Define o cabeçalho de nível 3 -->
+            <video controls> <!-- Define um vídeo com controles de reprodução -->
+                <source src="video.mp4" type="video/mp4"> <!-- Define a origem e o tipo do vídeo -->
+                Seu navegador não suporta a tag de vídeo. <!-- Define um fallback caso o navegador não suporte vídeo -->
+            </video>
+
+            <h3>Áudio</h3> <!-- Define o cabeçalho de nível 3 -->
+            <audio controls> <!-- Define um áudio com controles de reprodução -->
+                <source src="audio.mp3" type="audio/mpeg"> <!-- Define a origem e o tipo do áudio -->
+                Seu navegador não suporta a tag de áudio. <!-- Define um fallback caso o navegador não suporte áudio -->
+            </audio>
+
+            <h3>Objeto Incorporado</h3> <!-- Define o cabeçalho de nível 3 -->
+            <object data="documento.pdf" type="application/pdf" width="600" height="400"> <!-- Define um objeto incorporado -->
+                <p>Seu navegador não suporta objetos incorporados.</p> <!-- Define um fallback caso o navegador não suporte o objeto -->
+            </object>
+        </section>
+    </main>
+    <footer> <!-- Define o rodapé da página -->
+        <p>&copy; 2024 Conteúdo Multimídia</p> <!-- Define o texto do rodapé com o ano de direitos autorais -->
+    </footer>
+</body>
+</html>

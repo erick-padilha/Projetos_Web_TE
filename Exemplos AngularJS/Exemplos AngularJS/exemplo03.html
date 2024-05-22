@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" ng-app="testeController">
+	<head>
+		 <title>AngularJS - Framework front-end MVW - JS</title>
+		 <meta charset="UTF-8">
+		 <meta name="description" content="Aprendendo utilizar 
+		 as diretivas AngularJS">
+		 <meta name="author" content="Aline Zenker">
+		 <link rel="stylesheet" href="css/bootstrap.min.css">
+		 <script src="js/angular.min.js"></script>
+		 <script src="js/exemploController.js"></script>
+	</head>	
+	<body ng-controller="exemploController">
+	   <div class="container-fluid" style="width:50%">
+			<h1>Exemplo de Controller</h1>
+			<label>Digite seu nome: </label>
+			<input type="text" ng-model="nome"
+			class="form-control">
+			<h3>Seu nome é: {{nome}}</h3>		
+	</body>
+</html>
+
