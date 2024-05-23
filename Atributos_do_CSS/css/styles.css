@@ -1,0 +1,109 @@
+/* Seletores universais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o elemento body */
+body {
+    font-family: Arial, sans-serif; /* Define a família de fontes */
+    font-size: 16px; /* Define o tamanho da fonte */
+    line-height: 1.6; /* Define a altura da linha */
+    background-color: #f4f4f4; /* Define a cor de fundo */
+    color: #333; /* Define a cor do texto */
+}
+
+/* Estilo para os cabeçalhos */
+h1 {
+    font-size: 24px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte */
+    margin-bottom: 20px; /* Define a margem inferior */
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os parágrafos */
+p {
+    margin-bottom: 10px;
+}
+
+/* Estilo para as listas */
+ul, ol {
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Estilo para as âncoras (links) */
+a {
+    text-decoration: none; /* Remove a decoração de texto padrão */
+    color: #007bff; /* Define a cor do link */
+}
+
+a:hover {
+    text-decoration: underline; /* Adiciona uma linha sublinhada ao passar o mouse */
+}
+
+/* Estilo para as imagens */
+img {
+    max-width: 100%; /* Garante que as imagens não ultrapassem o contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Permite que as margens verticais se apliquem corretamente */
+    margin-bottom: 15px;
+}
+
+/* Estilo para as divisões */
+div {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Estilo para os elementos de formulário */
+input, textarea, select, button {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para as tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}

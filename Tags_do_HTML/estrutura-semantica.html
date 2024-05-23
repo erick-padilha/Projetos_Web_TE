@@ -1,0 +1,111 @@
+<!DOCTYPE HTML> <!-- Define o tipo de documento HTML -->
+<html lang="pt-BR"> <!-- Define o idioma da página -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura da viewport -->
+    <title>Layout Semântico</title> <!-- Define o título da página -->
+    <style>
+        /* Estilo interno */
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte do texto */
+            line-height: 1.6; /* Define a altura da linha */
+            margin: 0; /* Define a margem externa */
+            padding: 0; /* Define o preenchimento interno */
+            background-color: #f4f4f4; /* Define a cor de fundo */
+        }
+        header, footer {
+            background-color: #333; /* Define a cor de fundo do cabeçalho e rodapé */
+            color: #fff; /* Define a cor do texto */
+            padding: 1em 0; /* Define o preenchimento interno */
+            text-align: center; /* Alinha o texto ao centro */
+        }
+        nav ul {
+            list-style: none; /* Remove os estilos da lista */
+            padding: 0; /* Remove o preenchimento interno */
+        }
+        nav ul li {
+            display: inline; /* Define os itens da lista como elementos em linha */
+            margin-right: 10px; /* Define a margem à direita */
+        }
+        nav ul li a {
+            text-decoration: none; /* Remove a decoração do link */
+            color: #333; /* Define a cor do texto */
+            padding: 5px 10px; /* Define o preenchimento interno */
+            border: 1px solid #333; /* Define a borda */
+            border-radius: 5px; /* Define o raio da borda */
+        }
+        nav ul li a:hover {
+            background-color: #333; /* Define a cor de fundo ao passar o mouse */
+            color: #fff; /* Define a cor do texto ao passar o mouse */
+        }
+        main {
+            padding: 20px; /* Define o preenchimento interno */
+            max-width: 800px; /* Define a largura máxima */
+            margin: 0 auto; /* Centraliza horizontalmente */
+            background-color: #fff; /* Define a cor de fundo */
+        }
+        section {
+            margin-bottom: 20px; /* Define a margem inferior */
+        }
+        article {
+            margin-bottom: 20px; /* Define a margem inferior */
+        }
+        article header {
+            background-color: #333; /* Define a cor de fundo do cabeçalho do artigo */
+            color: #fff; /* Define a cor do texto */
+            padding: 10px; /* Define o preenchimento interno */
+            margin-bottom: 10px; /* Define a margem inferior */
+        }
+        article header p {
+            margin: 0; /* Remove a margem do parágrafo dentro do cabeçalho */
+        }
+        article footer {
+            background-color: #f4f4f4; /* Define a cor de fundo do rodapé do artigo */
+            padding: 10px; /* Define o preenchimento interno */
+            text-align: right; /* Alinha o texto à direita */
+        }
+        aside {
+            background-color: #f4f4f4; /* Define a cor de fundo da seção lateral */
+            padding: 10px; /* Define o preenchimento interno */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1> <!-- Define o cabeçalho principal -->
+        <nav>
+            <ul>
+                <!-- Lista de navegação -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="estrutura-basica.html">Estrutura Básica</a></li>
+                <li><a href="formularios-interatividade.html">Formulários</a></li>
+                <li><a href="listas-tabelas.html">Listas e Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Últimos Artigos</h2>
+
+            <article>
+                <header>
+                    <h3>Título do Artigo</h3>
+                    <p>Publicado em <time datetime="2024-05-15">15 de maio de 2024</time> por <span>Autor</span></p>
+                </header>
+                <p>Este é o conteúdo do artigo. Ele pode incluir texto, imagens, vídeos e mais.</p> <!-- Define o conteúdo do artigo -->
+                <footer>
+                    <p>Comentários: 3</p> <!-- Define o rodapé do artigo -->
+                </footer>
+            </article>
+
+            <aside>
+                <h3>Sobre Mim</h3> <!-- Define o cabeçalho da seção lateral -->
+                <p>Este é um texto sobre o autor do blog.</p> <!-- Define o conteúdo da seção lateral -->
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Meu Blog</p> <!-- Define o rodapé da página -->
+    </footer>
+</body>
+</html>

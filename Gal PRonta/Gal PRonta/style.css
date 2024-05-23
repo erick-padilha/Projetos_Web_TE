@@ -1,0 +1,154 @@
+/*
+www.99Points.info
+Skype: zeeshan-rasool
+*/
+html, body{
+	border:0;
+	outline:0;
+	font-weight:inherit;
+	font-style:inherit;
+	background: url(bg.png) repeat;
+	font-size:100%;
+	font-family:inherit;
+}
+#border
+{ 
+	cursor:pointer;
+	position:fixed;
+	bottom:0px; 
+	left:160px;
+	z-index:999;display:none;
+}
+
+#controls {display:none;}
+
+#controls #hide
+{ 
+	cursor:pointer;
+	position:fixed;
+	bottom:472px;  
+	left:861px;
+	z-index:999;
+}
+
+#controls #pause
+{ 
+	cursor:pointer;
+	position:fixed;
+	bottom:472px;  
+	left:794px;
+	z-index:999;
+}
+
+#prev{ float:left;}
+#next{ float:right;}
+
+#click
+{ 
+	cursor:pointer;
+	position:fixed;
+	bottom:0; 
+	left:0px;
+	z-index:999;
+}
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#fff;
+  display:none;
+}
+
+#left_bar 
+{
+	top:80px; 
+	left:25%;
+	height:340px;
+	width:545px;
+	padding:10px;
+	
+	position: relative;
+	overflow: auto;
+	
+	-moz-background-clip: padding;     /* Firefox 3.6 */
+	-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+	background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+	border: 15px solid rgba(0,0,0,0.3);
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	border-radius: 40px; 
+}
+
+
+
+#left_bar  .box{
+	height:110px;
+	float:left;
+	margin-bottom:3px;
+	margin-left:5px;
+	width:130px;
+}
+#imagePlacer{
+	width:608px;
+	height:413px;
+	position:fixed;
+	bottom:12px; 
+	background: url(load.gif) center center no-repeat #000000;
+	padding:5px;
+	left:160px;
+	display:none;
+	z-index:999;
+}
+
+#captions span{ display:none; }
+
+.box img{-webkit-border-radius: 12px;;border-radius: 12px; -moz-border-radius: 12px; margin:4px 0 0 4px; cursor:pointer}
+
+.box img:hover {filter:alpha(opacity=50);	
+	opacity: 0.8; /*width:94px; margin-left:7px;margin-top:7px;}*/
+}
+
+#dialog2 {
+ /* background:url(images/notice.png) no-repeat 0 0 transparent; */
+  width:500px; 
+  height:360px;
+  padding:50px 0 20px 25px;
+}
+
+.window img{ cursor:pointer;}
+
+.window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:500px;
+  height:360px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+#right_bar  .box{
+	background: #000;
+	height:110px;
+	margin-bottom:3px;
+	width:110px;
+}
+
+#content {
+	width: 750px;
+	margin: 0 auto;
+	background:#D1DFF3;
+	margin-bottom: 25px;font-family:Arial,Helvetica,sans-serif;
+	font-size:11px;
+	padding: 10px;
+	text-align:justify;
+}
+
+a.link{ 
+	bottom:10; left:804px;position:fixed;
+	z-index:999; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px
+	}
+

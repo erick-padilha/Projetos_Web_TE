@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="contatos" ng-controller="Lista">
+	<head>
+		 <title>AngularJS - Framework front-end MVW - JS</title>
+		 <meta charset="UTF-8">
+		 <meta name="description" content="Aprendendo utilizar 
+		 as diretivas AngularJS">
+		 <meta name="author" content="Aline Zenker">
+		 <link rel="stylesheet" href="css/bootstrap.min.css">
+		 <script type="text/javascript"src="js/angular.min.js"></script>
+		 <script type="text/javascript" src="js/controllerExemplo04.js"></script>
+	</head>
+	<body>
+	
+		<div class="container-fluid" style="width:50%">
+			<h1 ng-bind="titulo"></h1>
+			<label>Buscar:</label>
+			<br>
+			<input type="text" ng-model="search" class="form-control">
+	 
+			<ul>
+				<li ng-repeat="c in contatos | filter:search">
+					{{c.name}} - {{c.phone}} - {{c.email}}
+				</li>
+			</ul>
+		</div> 
+	</body>
+</html>
